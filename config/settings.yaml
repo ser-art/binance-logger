@@ -1,0 +1,12 @@
+version: 0.0.1
+
+logger:
+  
+  interval: 1m
+
+  trading_pairs:
+    - BTCUSDT
+    - ETHUSDT
+    - BNBBTC
+
+  sma_interval: 14

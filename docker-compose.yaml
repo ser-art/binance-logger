@@ -1,0 +1,14 @@
+version: "3.6"
+
+services:
+
+  binance_logger:
+    restart: always
+    env_file:
+      - config/.env
+    build:
+      context: ./
+      network: host
+    image: binance-logger:latest
+    volumes:
+      - ./:/app
