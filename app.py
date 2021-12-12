@@ -15,7 +15,6 @@ db = {}
 
 async def app():
     streams_string = get_streams_string()
-    print(streams_string)
     async with websockets.connect(streams_string) as websocket:
         async for message_str in websocket:
             message = json.loads(message_str)
